@@ -26,12 +26,15 @@
 
     <main class="container">
       <!-- method="post" foi removido apenas para o exemplo funcionar sem o servidor -->
+      <div class='note-input'>
       <form class="form-card">
+        <div class='note-input-inside-container'>
         <input
           class="form-card-title"
           type="text"
           name="titulo"
           placeholder="Título"
+          id='titulo'
         />
         <textarea
           class="autoresize"
@@ -39,7 +42,9 @@
           placeholder="Digite o conteúdo..."
         ></textarea>
         <button class="btn" type="submit">Criar</button>
+      </div>
       </form>
+    </div>
 
       <div class="card-container">
         <div class="card">

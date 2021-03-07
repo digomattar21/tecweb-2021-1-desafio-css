@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Sorteia classes de cores aleatoriamente para os cards
   let cards = document.getElementsByClassName("card");
+  cards = Array.from(cards);
   for (let i = 0; i < cards.length; i++) {
     let card = cards[i];
     card.className += ` card-color-${getRandomInt(
